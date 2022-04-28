@@ -28,6 +28,8 @@ function addHTML(string) {
     }
     if (el === "" && afterH2) {
       formatted += "";
+    } else if (el === " " && afterH2) {
+      formatted += "";
     } else if (el && afterH2) {
       formatted += `<li>${el}</li>`;
     }
