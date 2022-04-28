@@ -7,7 +7,7 @@ function addHTML(string) {
   string.forEach((el) => {
     if (!el.toLowerCase().includes('klíčové vlastnosti') && !afterH2) {
       if (!el.toLowerCase().includes('klíčové funkce') && !afterH2) {
-        if (!el) {
+        if (el === '') {
           formatted += '';
         } else {
           formatted += `<p>${el}</p>`;
