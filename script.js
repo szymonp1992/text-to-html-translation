@@ -22,7 +22,7 @@ function addHTML(string) {
       formatted += `<h2><span style="font-size: 18px;"><strong>${el}</strong></span></h2><ul>`;
       afterH2 = true;
     }
-    if (!el && afterH2) {
+    if (el === '' && afterH2) {
       formatted += '';
     } else if (el && afterH2) {
       formatted += `<li>${el}</li>`;
