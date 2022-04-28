@@ -9,6 +9,8 @@ function addHTML(string) {
       if (!el.toLowerCase().includes('klíčové funkce') && !afterH2) {
         if (el === '') {
           formatted += '';
+        } else if (el === " ") {
+          formatted += "";
         } else {
           formatted += `<p>${el}</p>`;
         }
