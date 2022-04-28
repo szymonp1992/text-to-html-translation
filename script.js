@@ -37,7 +37,7 @@ function addHTML(string) {
   if (formatted.indexOf("</li>") !== -1) {
     formatted += "</ul>";
   }
-  return formatted;
+  return formatted.replaceAll("• ", "");
 }
 
 input.addEventListener("input", (e) => {
